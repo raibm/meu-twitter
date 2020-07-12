@@ -1,14 +1,15 @@
 import React from 'react';
 
 import Main from '../Main';
+import MenuBar from '../MenuBar';
 
 import { Container, Wrapper } from './styles';
 
-const layouts: React.FC = () => {
+const Layout: React.FC = () => {
   return (
     <Container>
       <Wrapper>
-        {/* <MenuBar/> */}
+        <MenuBar/>
         <Main/>
         {/* <SideBar/> */}
       </Wrapper>
@@ -16,4 +17,4 @@ const layouts: React.FC = () => {
   );
 }
 
-export default layouts;
+export default Layout;
