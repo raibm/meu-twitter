@@ -1,7 +1,9 @@
 import React from 'react';
+import StickyBox from 'react-sticky-box';
 
 import List from '../List';
 import FollowSuggestion from '../FollowSuggestion';
+import News from '../News';
 
 import { 
   Container,
@@ -18,7 +20,7 @@ const SideBar: React.FC = () => {
         <SearchInput placeholder="Buscar no Twitter"/>
         <SearchIcon/>
       </SearchWrapper>
-
+  <StickyBox>
       <Body>
         <List
           title="Talvez você curta"
@@ -33,7 +35,12 @@ const SideBar: React.FC = () => {
             />,
           ]}
         />
+        <List
+          title="Talvez você curta"
+          elements={[<News/>, <News/>]}
+        />
       </Body>
+      </StickyBox>
     </Container>
   );
 }

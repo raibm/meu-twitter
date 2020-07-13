@@ -63,6 +63,7 @@ export const SearchIcon = styled(Search)`
 
   fill: var(--gray);
 `;
+
 export const Body = styled.div`
   display: flex;
   flex-direction: column;
